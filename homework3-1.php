@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <form action="test2.php" method="GET">
+        <form action="homework3-1.php" method="GET">
             숫자를 입력 하세요 : <input type="number" name="y" /><br />
             <input type="submit" value="확인" />
         </form>
@@ -9,10 +9,13 @@
         $n = $_GET["y"];
         $sum = 0;
         $prod = 1;
-        for($i=1;$i <= $n;$i++)
-        {
-            echo("   $i");
-        }
+        if(isset($_GET['y'])==TRUE)
+            {
+                for($i=1;$i <= $n;$i++)
+                {
+                    echo("   $i");
+                }
+            }
         echo("<br>");
         for($i=1;$i <= $n;$i++)
         {
